@@ -1,0 +1,101 @@
+.container-user-primary{
+    display: flex;
+   
+}
+.container-imgs{
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+}
+.container-texts{
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.provincia-container{
+    display: flex;
+    flex-direction: row;
+}
+.conatiner-province-data{
+    background-color: #8893ea;
+    box-shadow :1px 2px 13px -1px #8893ea5b;
+    padding: 8px 40px 8px 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.province-data{
+    margin: 0%;
+    color: white;
+    
+}
+.province-data::first-letter{
+    text-transform: uppercase;
+}
+.province-info{
+    background-color: white;
+    box-shadow :1px 2px 13px -1px #8893ea5b;
+    padding: 8px 40px 8px 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.title-province{
+    margin: 0%;
+    color: black;
+}
+
+
+
+.image-container-sun{
+    background-image: url('../assets/sun-walpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    margin-right: 30px;
+    height: 400px;
+    box-shadow :1px 2px 13px 8px #8893ea5b;
+    border-radius:  60px 0px 0px 60px;
+}
+.image-container-rain{
+    background-image: url('../assets/rain-walpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    
+    height: 400px;
+    border-radius:  0px 60px 60px 0px;
+    box-shadow :1px 2px 13px 8px #8893ea5b;
+}
+@media (max-width:1100px) {
+    .container-user-primary{
+        flex-direction: column;
+    align-items: center;
+    order: 0;
+       
+    }
+    .container-imgs{
+        order: 2;
+        margin-top: 75px;
+        width: 90%;
+    }
+    .container-texts{
+        margin-left: 0;
+        width: 90%;
+    }
+}
+@media (max-width:600px){
+    .conatiner-province-data{
+        margin-left: 10px;
+    }
+    .container-imgs {
+        width: 100%;
+    }
+    .center{
+        width: 90%;
+    }
+}

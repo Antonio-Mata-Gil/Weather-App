@@ -1,0 +1,45 @@
+
+.form{
+    width: 80%;
+    margin: auto;
+}
+.form-container{
+    text-align: center;
+    width: 80%;
+    
+    border: none;
+    border-radius: 8px;
+    
+    
+    margin: auto;
+    
+  
+}
+.input-container{
+    width: 80%;
+    padding: 10px 43px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 0%;
+    box-shadow:1px 2px 15px -11px #8893ea5b;
+    border: 2px solid rgba(128, 128, 128, 0.24);
+    
+}
+.button-container{
+  background-color: white;
+    border-radius: 8px;
+    border: none;
+    margin-left: 10px;
+   
+    position: relative;
+    top: 0;
+    right: 50px;
+    margin: 0%;
+    
+}
+@media (max-width:736px) {
+    .button-container{
+        top: -28px;
+    right: -90px;
+    }
+}

@@ -1,0 +1,136 @@
+body{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.no-data-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.no-data{
+
+    color: #333333;
+}
+.container-weather-primary{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+}
+.container-weather-today{
+    display: flex;
+    box-shadow:1px 2px 15px 8px #8893ea5b;
+    border-radius: 30px;
+    
+}
+.container-img {
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 70px;
+padding-bottom: 120px;
+border-radius: 30px;
+
+}
+.rain{
+    background-image: url("https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+ 
+}
+.sun{
+    background-image: url("../assets/sun-imagen.jpeg");
+    
+}
+.clouds{
+    background-image: url("../assets/clouds.webp");
+    background-position: center;
+}
+.fewClouds{
+    background-image: url("../assets/few-clouds.webp");
+}
+.snow{
+    background-image: url("../assets/snow.jpg");
+    background-position: center;
+}
+.thunderstorm{
+    background-image: url("../assets/storm.jpeg");
+    background-position: center;
+}
+.haze{
+    background-image: url("../assets/haze.webp");
+}
+.noImg{
+    background-image: url("../assets/city.jpeg");
+    background-position: center;
+}
+
+.info-container{
+   
+    width: 80%;
+    margin: auto;
+  
+}
+.city-name {
+    font-weight: 400;
+    margin: 0px 0px 10px 0px;
+}
+.date p{
+    margin: 0;
+}
+.location{
+    font-size: 18px;
+}
+.data-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+    
+}
+.icon{
+    margin-left: -20px;
+}
+.temp h3{
+    font-size: 46px;
+  
+    margin: 10px 10px 5px 0px;
+}
+
+.weather-data{
+    font-size: 25px;
+    
+}
+.weather-data::first-letter{
+    text-transform: uppercase;
+}
+.container-weather-future{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    
+}
+.container-day{
+color:#333333;
+text-align: center;
+background-color: white;
+border: 2px solid rgba(128, 128, 128, 0.24);
+border-radius: 20px;
+width: 150px;
+padding: 20px;
+margin-bottom: 20px;
+}
+.icon-future{
+    margin-left: 5px;
+    margin-bottom: -20px;
+}
+.info-future p{
+margin: 10px;
+}
+.data-weather-future::first-letter{
+    text-transform: uppercase;
+}
+.week{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
