@@ -17,7 +17,6 @@ const Login = () => {
     API.post("login", formData)
       .then((response) => {
         if (response.status === 200) {
-          console.log(response);
           localStorage.setItem( "token", response.data.accessToken)
           localStorage.setItem( "user", response.data.user.user)
           localStorage.setItem( "email", response.data.user.email)

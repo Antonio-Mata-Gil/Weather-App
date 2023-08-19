@@ -28,10 +28,14 @@ const Weather = () => {
     const getData = async ()=>{
       const dataApi = await fetch(`${urlWeather}` )
       const dataJson = await dataApi.json();
+      console.log(dataJson);
+      console.log(dataApi.status);
       if (dataJson && dataJson.weather && dataJson.weather.length > 0) {
         setWeather(dataJson);
       } else {
-        setWeather([]);
+        if (dataApi.status === 400){
+          getLocation(province)
+        }
       }
       
   }
@@ -39,6 +43,7 @@ const Weather = () => {
   const getForecast = async ()=>{
     const dataApi = await fetch(`${urlForecast}`)
     const dataJson = await dataApi.json();
+   
     if (dataJson && dataJson.list && dataJson.list.length > 0) {
         setForecast(dataJson.list);
         setShow(true);
