@@ -13,6 +13,6 @@ export const ApiHeader = {
     },
   };
 export const API = axios.create({
-    baseURL: "https://my-json-server.typicode.com/Antonio-Mata-Gil/Weather-Project",
+    baseURL: "https://my-json-server.typicode.com/Antonio-Mata-Gil/Weather-Project/users",
     headers: ApiHeader,
 })
