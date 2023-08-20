@@ -28,8 +28,6 @@ const Weather = () => {
     const getData = async ()=>{
       const dataApi = await fetch(`${urlWeather}` )
       const dataJson = await dataApi.json();
-      console.log(dataJson);
-      console.log(dataApi.status);
       if (dataJson && dataJson.weather && dataJson.weather.length > 0) {
         setWeather(dataJson);
       } else {
