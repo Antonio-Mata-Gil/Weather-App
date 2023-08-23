@@ -13,6 +13,6 @@ export const ApiHeader = {
     },
   };
 export const API = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://json-server-auth-navy.vercel.app/users",
     headers: ApiHeader,
 })
